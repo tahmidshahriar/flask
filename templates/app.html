@@ -1,0 +1,33 @@
+
+<html lang="en">
+  <head>
+    <title> ToDo</title>    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <div class="containers">
+  
+  <div>
+  <form action="" method="post" name="form">
+      <p>
+          ToDo:<br>
+          {{ form.todo(size=80) }}<br>
+      </p>
+      <p><input type="submit" value="Add ToDo"></p>
+  </form>
+  </div>
+
+          {% for post in myList %}
+            <div>
+            {{post [todo]}}
+            </div>
+            <div class="seperator"></div>   
+          {% endfor %}
+
+
+  </div>
+
+
+  </body>
+  </html>
